@@ -55,14 +55,44 @@ int main() {
     // std::cout << "\nIT MEETUP TICKET\n" << "Organizer: IT Academy\n" << "Participant: " << name << "\n" << "Event: \"" << name_sob << "\"\n" << "Ticket price: " << price_one << " RUB\n" << "Tickets: " << kol_bulet << "\n" << "Service fee: " << ser_free << " RUB\n" << "Total: " << total << " RUB\n" << "Issued before: " << Kol_v_b << "\n" << "Confirmed before: " << std::boolalpha << confirmation << "\n";
     // Kol_v_b = kol_bulet; confirmation = true;
     // std::cout << "Issued after: " << Kol_v_b << "\n" << "Confirmed after: " << confirmation << "\n" << "Saved issued: " << savedIssued << "\n";
-    // return 0;
 
 // инкримент ++
 // дикримент --
 //условная конструкция - это 
 // using std::cout
 // using std::cin
-// switch (выражение)
+// switch (выражение){}
 // case згач1: инструкция1
 // default: инструкция
+// каждый case заканчивается break
+    int num1 {};
+    int num2 {};
+    std::string chet {};
+    std::cout << "Введите число №1: ";
+    std::cin >> num1;
+    std::cout << "Введите число №2: ";
+    std::cin >>num2;
+    std::cout << "Введите действие которое хотите: ";
+    std::cin >> chet;
+    if (chet == "+"){
+        std::cout << "Сложение: " << num1 + num2;
+    }
+    else if  (chet == "*"){
+        std::cout << "Умножение: " << num1 * num2;
+    }
+    else if (chet == "-"){
+        std::cout << "Вычитание: " << num1 - num2;
+    }
+    else if (chet == "/"){
+        if (num2 == 0){
+            std::cout << "Ошибка";
+        }
+        else {
+        std::cout << "Деление: " <<num1 / num2;
+        }
+    }
+    return 0;
+
+
+
 }
