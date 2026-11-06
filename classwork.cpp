@@ -62,5 +62,7 @@ int main() {
 //условная конструкция - это 
 // using std::cout
 // using std::cin
-// 
+// switch (выражение)
+// case згач1: инструкция1
+// default: инструкция
 }
