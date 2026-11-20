@@ -9,7 +9,7 @@ struct car {
 };
 
 enum class num_car {id1, id2, id3, id4, id5};
-void add_car(){
+car add_car(){
     car new_car;
     std::cout << "Enter the car make: ";
     std::cin >> new_car.mark;
@@ -22,6 +22,7 @@ void add_car(){
     return new_car;
 }
 void cars() {
+    srd::cout << "Vedite id car: ";
     std::string id_car;
     std::cin >> id_car;
 
@@ -71,6 +72,17 @@ void cars() {
 }
 
 int main() {
-    cars();
+    std::string zapros;
+    std::cout << "We xotute add new car (1) or We xotute watch car (2)";
+    std::cin >> zapros;
+    if (zapros == "1"){
+        cars();
+    }
+    else if (zapros == "2"){
+        add_car();
+    }
+    else{
+        std::cout<<"Not variant";
+    }
     return 0;
 }
