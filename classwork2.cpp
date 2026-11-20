@@ -9,7 +9,18 @@ struct car {
 };
 
 enum class num_car {id1, id2, id3, id4, id5};
-
+void add_car(){
+    car new_car;
+    std::cout << "Enter the car make: ";
+    std::cin >> new_car.mark;
+    std::cout << "Enter the car probek: ";
+    std::cin >> new_car.probek;
+    std::cout << "Enter the car god: ";
+    std::cin >> new_car.god;
+    std::cout << "Enter the car tup_dvigatela: ";
+    std::cin >> new_car.tup_dvigatela;
+    return new_car;
+}
 void cars() {
     std::string id_car;
     std::cin >> id_car;
