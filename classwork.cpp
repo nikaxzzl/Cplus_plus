@@ -3,6 +3,7 @@
 
 int main() {
 
+    
 // Задание №1
     // std::string name;
     // std::string group;
