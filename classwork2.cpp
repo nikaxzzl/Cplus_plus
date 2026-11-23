@@ -7,7 +7,8 @@ struct car {
     int god;
     std::string tup_dvigatela;
 };
-
+int count_cars = 0;
+car garage[100];
 enum class num_car {id1, id2, id3, id4, id5};
 car add_car(){
     car new_car;
@@ -22,7 +23,7 @@ car add_car(){
     return new_car;
 }
 void cars() {
-    srd::cout << "Vedite id car: ";
+    std::cout << "Vedite id car: ";
     std::string id_car;
     std::cin >> id_car;
 
@@ -75,11 +76,14 @@ int main() {
     std::string zapros;
     std::cout << "We xotute add new car (1) or We xotute watch car (2)";
     std::cin >> zapros;
+
     if (zapros == "1"){
-        cars();
+        garage[count_cars] = add_car();
+        count_cars++;
+        add_car();
     }
     else if (zapros == "2"){
-        add_car();
+        cars();
     }
     else{
         std::cout<<"Not variant";
