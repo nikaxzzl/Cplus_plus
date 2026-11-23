@@ -7,6 +7,7 @@ struct car {
     int god;
     std::string tup_dvigatela;
 };
+
 int count_cars = 0;
 car garage[100];
 enum class num_car {id1, id2, id3, id4, id5};
