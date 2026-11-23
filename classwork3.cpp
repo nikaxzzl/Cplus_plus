@@ -10,6 +10,7 @@ int calculateExperessFee(int weightKg){
         return -1;
     return 400 + weightKg * 50;
 }
+
 int main(){
     const int weight{18};
     std::cout << "Standard: " << calculateStandardFee(weight) << std::endl;
